@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+ 
+    <class name="nl.ivan.persistence.Breaker" table="breaker">
+ 
+        <id name="id" column="ID">
+            <generator class="native" />
+        </id>
+ 
+        <property name="state">
+            <column name="STATE" length="16" not-null="true" />
+        </property>
+ 
+        <property name="functionWrapped">
+            <column name="FUNCTIONWRAPPED" length="16" not-null="true" />
+        </property>
+        
+        <property name="prefix">
+            <column name="PREFIX" length="16" not-null="true" />
+        </property>
+        
+        <property name="status">
+            <column name="STATUS" length="16" not-null="true" />
+        </property>
+ 
+    </class>
+</hibernate-mapping>
