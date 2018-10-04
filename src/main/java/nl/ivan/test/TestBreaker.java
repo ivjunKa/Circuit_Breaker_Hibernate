@@ -43,7 +43,7 @@ public class TestBreaker {
 		breaker_crud.cleanupBreakers();
 		cb.runProtectedFunction(tb);
 		othercb.runProtectedFunction(tb);
-
+// Define and add ErrorCollector
 //		IErrorCollector ec = (o)-> {
 //		System.out.println("Checking for possible error scenario " + o);
 //		return (o.toString().equals("Whoops")) ? true : false;
